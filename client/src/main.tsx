@@ -2,6 +2,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
+/* Firebase */
+import "@/lib/firebase";
+
 /* Components */
 import App from './App.tsx'
 
