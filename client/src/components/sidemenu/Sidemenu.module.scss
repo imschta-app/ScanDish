@@ -7,13 +7,45 @@
     width 0.3s ease,
     border-radius 0.3s ease;
 
+  .header {
+    display: flex;
+    align-items: center;
+
+    .title {
+      color: var(--color-text-secondary);
+      font-size: 1.125rem;
+      font-weight: 500;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    // Header
+    &.open {
+      padding: 24px 21px 12px 21px;
+    }
+
+    &.closed {
+      padding: 12px 0px 12px 0px;
+    }
+  }
+
+  .content {
+    // margin: 12px 0px 0px 0px;
+  }
+
+  // Sidemenu
   &.open {
     width: 272px;
     border-radius: 0% 10% 10% 0% / 0% 90% 90% 0%;
   }
 
   &.closed {
-    width: 50px;
-    border-radius: 16px;
+    width: 62px;
+    border-radius: 0;
+
+    .header {
+      justify-content: center;
+    }
   }
 }
