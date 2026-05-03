@@ -1,0 +1,22 @@
+/* Stylesheet */
+.nav_btn {
+  padding: 0px 21px 0px 21px;
+  display: flex;
+  height: 46px;
+  width: 100%;
+  align-items: center;
+  color: var(--color-text-secondary);
+  background: var(--primary-background-color);
+  border: none;
+
+  &:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+
+  .icon {
+    margin: 0px 12px 0px 0px;
+    height: 26px;
+    width: 26px;
+  }
+}
